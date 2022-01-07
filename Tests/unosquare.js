@@ -8,7 +8,7 @@
     }
   };*/
 
-  module.exports = {
+  /*module.exports = {
     'Demo test unosquare' : function(browser) {
       browser
       .windowMaximize()
@@ -20,4 +20,8 @@
       .url('https://www.amazon.com')
       .end();
     }
+  };*/
+
+  this.demoTest = function (browser) {
+    browser.assert.value("form.login input[type=text]", "username");
   };
