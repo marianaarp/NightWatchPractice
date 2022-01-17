@@ -6,7 +6,7 @@
       .waitForElementVisible('body')
       .end();
     }
-  };*/
+  };
 
   module.exports = {
     'Demo test unosquare' : function(browser) {
@@ -20,4 +20,4 @@
       .url('https://www.amazon.com')
       .end();
     }
-  };
+  };*/
