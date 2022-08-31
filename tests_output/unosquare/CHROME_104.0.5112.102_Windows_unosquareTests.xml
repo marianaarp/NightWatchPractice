@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="0">
+
+  <testsuite name="unosquare.unosquareTests"
+    errors="0" failures="0" hostname="" id="" package="unosquare" skipped="0"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+        SyntaxError: C:\Users\mariana.rendon\Unosquare\dataExternal\unosquareForm.json: Unexpected end of JSON input
+       at parse (&lt;anonymous&gt;)
+       at Object.Module._extensions..json (node:internal/modules/cjs/loader:1167:22)
+       at Module.load (node:internal/modules/cjs/loader:981:32)
+       at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+       at Module.require (node:internal/modules/cjs/loader:1005:19)
+       at require (node:internal/modules/cjs/helpers:102:18)
+       at getData (C:\Users\mariana.rendon\Unosquare\PageObjects\Unosquare\mainpage.js:3:12)
+       at Page.contactUnosquare (C:\Users\mariana.rendon\Unosquare\PageObjects\Unosquare\mainpage.js:57:24)
+       at Object.test command careers (C:\Users\mariana.rendon\Unosquare\Tests\unosquare\careersUnosquare.js:7:6)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

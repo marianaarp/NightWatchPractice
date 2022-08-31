@@ -1,3 +1,8 @@
+  // This function is going to be created in the same page object
+  function getData() {
+    return require('../../dataExternal/unosquareForm'); // Using the correct path is important
+  };
+  
   //Page object the main page of unosquare
   module.exports = {
     url: 'https://www.unosquare.com',
@@ -41,6 +46,9 @@
       },
       blogMenu: {
           selector: "li a[href = 'https://blog.unosquare.com']"          
+      },
+      searchField:{
+        selector: "input#search-bar"
       }
     },
 
@@ -49,11 +57,15 @@
         //Command valid contacus
         contactUnosquare: function() {
           this.api.pause(1000);
+          const form = getData(); // this is the important part
           return this.waitForElementVisible('@contactusMenu', 1000)
             .click('@contactusMenu')
-            .setValue('@companyTextField', 'QA CoE course')
-            .setValue('@phoneTextField', '3300000000')
-            .setValue('@messageTextArea', 'This is a Random Text used in a Course')
+            .setValue('@companyTextField', form.company)
+            .setValue('@phoneTextField', form.phone)
+            .setValue('@messageTextArea', form.message)
+            //.setValue('@companyTextField', 'QA CoE course')
+            //.setValue('@phoneTextField', '3300000000')
+            //.setValue('@messageTextArea', 'This is a Random Text used in a Course')
             .click('@submitBtn')
             .waitForElementVisible('@nameWarningMsg')
         }
@@ -73,7 +85,21 @@
           this.api.pause(1000);
           return this.waitForElementVisible('@blogMenu', 1000)
           .click('@blogMenu')
-                              
+        }
+      },{
+        //Command valid blogSearch
+        blogSearch: function() {
+          this.api.pause(1000);
+          const form = getData(); // this is the important part
+          return this.waitForElementVisible('@searchField', 1000)
+          .setValue('@searchField', form.search[0])
+          .click('button.search-submit')
+          .setValue('@searchField', form.search[1])
+          .click('button.search-submit')
+          .setValue('@searchField', form.search[2])
+          .click('button.search-submit')
+          .setValue('@searchField', form.search[3])
+          .click('button.search-submit')                 
         }
       },
       {

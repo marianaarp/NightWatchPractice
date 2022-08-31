@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="unosquare.careersUnosquare"
+    errors="1" failures="0" hostname="" id="" package="unosquare" skipped="0"
+    tests="1" time="1.053" timestamp="">
+  
+    <testcase name="test command careers" classname="unosquare.careersUnosquare" time="1.053" assertions="0">
+    <error message="C:\Users\mariana.rendon\Unosquare\dataExternal\unosquareForm.json: Unexpected end of JSON input" type="error"><![CDATA[
+    SyntaxError: C:\Users\mariana.rendon\Unosquare\dataExternal\unosquareForm.json: Unexpected end of JSON input
+    at parse (&lt;anonymous&gt;)
+    at Object.Module._extensions..json (node:internal/modules/cjs/loader:1167:22)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at getData (C:\Users\mariana.rendon\Unosquare\PageObjects\Unosquare\mainpage.js:3:12)
+    at Page.contactUnosquare (C:\Users\mariana.rendon\Unosquare\PageObjects\Unosquare\mainpage.js:57:24)
+    at Object.test command careers (C:\Users\mariana.rendon\Unosquare\Tests\unosquare\careersUnosquare.js:7:6)
+    at Context.call (C:\Users\mariana.rendon\Unosquare\node_modules\nightwatch\lib\testsuite\context.js:376:35)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        SyntaxError: C:\Users\mariana.rendon\Unosquare\dataExternal\unosquareForm.json: Unexpected end of JSON input
+       at parse (&lt;anonymous&gt;)
+       at Object.Module._extensions..json (node:internal/modules/cjs/loader:1167:22)
+       at Module.load (node:internal/modules/cjs/loader:981:32)
+       at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+       at Module.require (node:internal/modules/cjs/loader:1005:19)
+       at require (node:internal/modules/cjs/helpers:102:18)
+       at getData (C:\Users\mariana.rendon\Unosquare\PageObjects\Unosquare\mainpage.js:3:12)
+       at Page.contactUnosquare (C:\Users\mariana.rendon\Unosquare\PageObjects\Unosquare\mainpage.js:57:24)
+       at Object.test command careers (C:\Users\mariana.rendon\Unosquare\Tests\unosquare\careersUnosquare.js:7:6)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

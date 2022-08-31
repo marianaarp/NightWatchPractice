@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Results - CHROME 104.0.5112.81 Windows </title>
+
+  <style>
+    html, body {
+      font-family: Arial,sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body { padding: 10px 40px; }
+
+    table { width: 100%; margin-bottom: 20px; }
+
+      td {
+        padding: 7px;
+        border-top: none;
+        border-left: 1px black solid;
+        border-bottom: 1px black solid;
+        border-right: none;
+      }
+
+      td.pass { color: #003b07; background: #86e191; }
+      td.skip { color: #7d3a00; background: #ffd24a; }
+      td.fail { color: #5e0e00; background: #ff9c8a; }
+
+    tr:last-child       { border-top: 1px black solid; }
+      tr:last-child td    { border-top: 1px black solid; }
+      tr:first-child td   { border-top: 1px black solid; }
+        td:last-child       { border-right: 1px black solid; }
+
+    tr.overview td      { padding-bottom: 0px; border-bottom: none; }
+    tr.overview.last td { padding-bottom: 3px; }
+
+    ul.assertions   { list-style-type: none; }
+      span.error      { color: #AD2B2B; }
+      span.success    { color: #53891E; }
+
+    .stacktrace { display: inline; }
+      .stacktrace code { display: none; }
+
+    #nightwatch-logo {
+      position: absolute;
+      top: 20px;
+      right: 33px;
+      width: 70px;
+      height: 75px;
+      background: transparent url('http://nightwatchjs.org/img/logo-nightwatch.png') no-repeat;
+      background-size: 70px 75px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Test Results</h1>
+
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr class="overview">
+      <td colspan="3" title="CHROME 104.0.5112.81 Windows "><strong>Browser:</strong> CHROME 104.0.5112.81 Windows </td>
+    </tr>
+    <tr class="overview">
+      <td colspan="3"><strong>Timestamp:</strong> Wed Aug 10 2022 16:34:54 GMT-0500 (Central Daylight Time)</td>
+    </tr>
+    <tr class="overview last">
+      <td colspan="3"><strong>Tests:</strong> 40<br></td>
+    </tr>
+    <tr>
+      <td class="pass"><strong>38</strong> passed</td>
+      <td class="skip"><strong>0</strong> errors</td>
+      <td class="fail"><strong>2</strong> failures</td>
+    </tr>
+  </table>
+
+      <h2>ApiTest</h2>
+
+        <h3>API Testing - GET Positive</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Passed [equal]: 200 &#x3D;&#x3D; 200
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Passed [equal]: Douglas J. StrubleFuture World Media &#x3D;&#x3D; Douglas J. StrubleFuture World Media
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Passed [equal]: image &#x3D;&#x3D; image
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Passed [equal]: v1 &#x3D;&#x3D; v1
+
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="success"><strong>OK.</strong></span>
+            <span class="success"><strong>4</strong></span> assertions passed. (1.027s)
+        </p>
+        <h3>API Testing - GET Negative</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Passed [equal]: 200 &#x3D;&#x3D; 200
+
+
+            </li>
+            <li>
+                <span class="error">&#10006;</span>
+
+              Failed [equal]: (&#x27;Douglas J. StrubleFuture World Media&#x27; &#x3D;&#x3D; &#x27;My Name&#x27;) - expected [0;32m&quot;My Name&quot;[0m but got: [0;31m&quot;Douglas J. StrubleFuture World Media&quot;[0m [0;90m(2ms)[0m
+
+                Expected &quot;My Name&quot; but got: &quot;Douglas J. StrubleFuture World Media&quot;
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="error"><strong>FAILED:</strong></span>
+            <span class="error"><strong>1</strong></span> assertions failed and
+            <span class="success"><strong>1</span></strong> passed. (0.3670s)
+        </p>
+
+        <h4>skipped</h4>
+        <ul>
+            <li>API Testing - POST</li>
+        </ul>
+
+      <hr>
+      <h2>google\google</h2>
+
+        <h3>Demo test google</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;body&gt; was visible after 29 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;body&gt;[0m is present [0;90m(9ms)[0m
+
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="success"><strong>OK.</strong></span>
+            <span class="success"><strong>2</strong></span> assertions passed. (1.662s)
+        </p>
+
+
+      <hr>
+      <h2>nightwatch\communityNightwatch</h2>
+
+        <h3>test command blogMenu</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;li a[href &#x3D; &#x27;/about/community/&#x27;]&gt; was visible after 42 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;button.DocSearch&gt; was visible after 25 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if the page title equals [0;33m&#x27;About | Nightwatch.js&#x27;[0m [0;90m(16ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if the URL is [0;33m&#x27;https://nightwatchjs.org/about/community/&#x27;[0m [0;90m(14ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;button.DocSearch&gt;[0m is enabled [0;90m(72ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;input#docsearch-input&gt;[0m is visible [0;90m(58ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;div.DocSearch-Hit-source&gt; was visible after 574 milliseconds.
+
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="success"><strong>OK.</strong></span>
+            <span class="success"><strong>7</strong></span> assertions passed. (6.879s)
+        </p>
+
+
+      <hr>
+      <h2>Tests\unosquare</h2>
+
+
+
+      <hr>
+      <h2>unosquare\blogUnosquare</h2>
+
+        <h3>test command blogMenu</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;li a[href &#x3D; &#x27;https://blog.unosquare.com&#x27;]&gt; was visible after 66 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;input#search-bar&gt; was visible after 28 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if the URL contains [0;33m&#x27;https://blog.unosquare.com/&#x27;[0m [0;90m(5ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;h1&gt;[0m contains text [0;33m&#x27;DIGITAL TRANSFORMATION BLOG&#x27;[0m [0;90m(37ms)[0m
+
+
+            </li>
+            <li>
+                <span class="error">&#10006;</span>
+
+              Testing if element [0;33m&lt;h1&gt;[0m contains text [0;33m&#x27;Unicorn&#x27;[0m in 5000ms - expected [0;32m&quot;contains text &#x27;Unicorn&#x27;&quot;[0m but got: [0;31m&quot;does not contain &#x27;Unicorn&#x27;&quot;[0m [0;90m(5435ms)[0m
+
+                Expected &quot;contains text &#x27;Unicorn&#x27;&quot; but got: &quot;does not contain &#x27;Unicorn&#x27;&quot;
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;h3.results-title&gt;[0m contains text [0;33m&#x27;RESULTS FOUND&#x27;[0m [0;90m(38ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if the URL is [0;33m&#x27;https://info.unosquare.com/blog-search?query&#x3D;quality&#x27;[0m [0;90m(9ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;li a[href &#x3D; &quot;#&quot;]&gt;[0m has css property [0;33m&#x27;color[0m: [0;33mrgba(22, 95, 251, 1)&#x27;[0m [0;90m(38ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;img.unicorn&gt; was visible after 22 milliseconds.
+
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="error"><strong>FAILED:</strong></span>
+            <span class="error"><strong>1</strong></span> assertions failed and
+            <span class="success"><strong>8</span></strong> passed. (23.20s)
+        </p>
+
+
+      <hr>
+      <h2>unosquare\careersUnosquare</h2>
+
+        <h3>test command careers</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;li a[href &#x3D; &#x27;/ContactUs&#x27;]&gt; was visible after 64 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;//div[contains(@class, &#x27;hs_name&#x27;)]//label[contains(., &#x27;Please complete this required field.&#x27;)]&gt; was visible after 28 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;li a[href &#x3D; &#x27;https://people.unosquare.com&#x27;]&gt; was visible after 47 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if the page title contains [0;33m&#x27;Unosquare Careers&#x27;[0m [0;90m(14ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;h1.coding&gt; was visible after 55 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;h1.coding&gt;[0m contains text [0;33m&#x27;CODING&#x27;[0m [0;90m(39ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;h3.about-btn-main&gt; was visible after 46 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;h3.about-btn-main&gt;[0m doesn&#x27;t have css property [0;33m&#x27;text-align[0m: [0;33mleft&#x27;[0m [0;90m(56ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;h3.about-btn-main&gt;[0m has css property [0;33m&#x27;font-size[0m: [0;33m48px&#x27;[0m [0;90m(45ms)[0m
+
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="success"><strong>OK.</strong></span>
+            <span class="success"><strong>9</strong></span> assertions passed. (7.112s)
+        </p>
+
+
+      <hr>
+      <h2>unosquare\practiceAreasUnosquare</h2>
+
+        <h3>test command practiceAreas</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;li a[href &#x3D; &#x27;/PracticeAreas&#x27;]&gt; was visible after 45 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;h2.subtitle&gt; was visible after 23 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if the URL is [0;33m&#x27;https://www.unosquare.com/PracticeAreas&#x27;[0m [0;90m(5ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if attribute [0;33m&#x27;class&#x27;[0m of element [0;33m&lt;div#tools&gt;[0m contains [0;33m&#x27;gray-section&#x27;[0m [0;90m(36ms)[0m
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;h2.subtitle&gt; was visible after 20 milliseconds.
+
+
+            </li>
+            <li>
+                <span class="success">&#10004;</span>
+
+              Testing if element [0;33m&lt;div#tools h2.subtitle&gt;[0m contains text [0;33m&#x27;OUR TOOLS&#x27;[0m [0;90m(35ms)[0m
+
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="success"><strong>OK.</strong></span>
+            <span class="success"><strong>6</strong></span> assertions passed. (3.593s)
+        </p>
+
+
+      <hr>
+      <h2>unosquare\unosquare</h2>
+
+        <h3>test pages validation</h3>
+        <ul class="assertions">
+            <li>
+                <span class="success">&#10004;</span>
+
+              Element &lt;li a[href &#x3D; &#x27;/ContactUs&#x27;]&gt; was visible after 42 milliseconds.
+
+
+            </li>
+        </ul>
+
+        <p>
+            <span class="success"><strong>OK.</strong></span>
+            <span class="success"><strong>1</strong></span> assertions passed. (2.741s)
+        </p>
+
+
+      <hr>
+      <h2>unosquare\unosquareTests</h2>
+
+
+
+      <hr>
+      <h2>unosquare\unosquare_contact</h2>
+
+
+
+      <hr>
+
+  <div id="nightwatch-logo"></div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+  $(function() {
+    $('div.stacktrace').on('click', 'a', function(evt) {
+      evt.preventDefault();
+
+      var $link = $(this);
+      var $code = $link.parent().find('code');
+
+      $code.is(':visible') ? $link.text('hide stacktrace'):
+                             $link.text('view stacktrace');
+
+      $code.toggle();
+    });
+  });
+  </script>
+</body>
+</html>
